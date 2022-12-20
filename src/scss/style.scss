@@ -1,0 +1,69 @@
+$body-bg: #c6e5ef;
+$body-color: black;
+
+$primary: #01497C;
+$secondary: #70a0bc;
+$light: #89C2D9;
+$dark: #013A63;
+$info: #2148d5;
+
+$navbar-light-color: $light;
+$navbar-light-hover-color: $light;
+$navbar-dark-color: $dark;
+$navbar-dark-hover-color: $dark;
+
+$navbar-light-active-color: $light;
+$navbar-dark-active-color: $dark;
+
+$box-shadow: 4px 4px 12px rgba($primary, .5);
+$box-shadow-sm: 2px 2px 6px rgba($secondary, .5);
+
+$input-bg: $light;
+$input-placeholder-color: $secondary;
+$input-border-color: $light;
+
+$font-family-sans-serif: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$input-box-shadow: $box-shadow-sm;
+$input-focus-box-shadow: 0 0 0 4px $secondary;
+$btn-box-shadow: 0 0 0 0 $secondary;
+$btn-active-box-shadow: 0 0 0 0 $secondary;
+$btn-focus-box-shadow: 0 0 0 4px $secondary;
+$form-select-box-shadow: $box-shadow-sm;
+$form-select-focus-box-shadow: 0 0 0 4px $secondary;
+
+$table-bg: $light;
+$table-accent-bg: $light;
+$table-border-width: 0;
+
+$enable-shadows: true;
+
+@import "bootstrap/bootstrap";
+
+.btn-primary {
+    @include button-variant($primary, $primary, $light, $hover-color: $light, $active-color: $light);
+}
+
+.btn-secondary {
+    @include button-variant($secondary, $secondary, $dark, $hover-color: $dark, $active-color: $dark);
+}
+
+.btn-light {
+    @include button-variant($light, $light, $dark, $hover-color: $dark, $active-color: $dark);
+}
+
+.btn-dark {
+    @include button-variant($dark, $dark, $light, $hover-color: $light, $active-color: $light);
+}
+
+.gradient {
+    background: linear-gradient(-45deg, #495464 0%, #828997 100%);
+}
+
+.mainpage-content {
+    margin-top: -3rem;
+    height: 100vh;
+    background: linear-gradient(#F4F4F2 0%, #E8E8E8 25rem);
+    border-radius: 1rem;
+}

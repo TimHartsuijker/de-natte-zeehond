@@ -1,0 +1,12 @@
+{
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/public",
+            "savePathReplacementPairs": null
+        }
+    ]
+}
